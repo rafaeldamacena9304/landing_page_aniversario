@@ -105,8 +105,11 @@ button:hover{
     main .container{
         padding-top:200px;
     }
-    .pix__section{
-        padding:3vw 10vw;
+    .pix__section .container{
+        display:block;
+    }
+    .text{
+        margin-bottom:24px;
     }
     .pix__section img{
         height:150px;
@@ -114,10 +117,19 @@ button:hover{
     .line{
         width:90%;
     }
+    button{
+        padding:8px 48px;
+    }
 }
 @media (max-width:500px){
     .pix__section{
         padding:6vw 10vw;
+    }
+    .main__title h1{
+        text-wrap: nowrap;
+    }
+    .main__title img{
+        display:none;
     }
 }
 @media (max-width:612px){
