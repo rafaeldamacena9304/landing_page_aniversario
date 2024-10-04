@@ -1,0 +1,132 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Outfit', sans-serif;
+}
+
+main{
+    background-image:url('/images/hero.png');
+    background-size:cover;
+    width:100%;
+    height:98vh;
+}
+
+main .container{
+    padding:8vw;
+}
+.name{
+    color:white;
+    margin-bottom:8px;
+}
+.main__title{
+    display:flex;
+    align-items: center;
+    margin-left:-8px;
+}
+.main__title h1{
+    color:white;
+    text-transform:uppercase;
+    font-size:48px;
+}
+.main__title img{
+    height:56px;
+    margin-right:8px;
+}
+.line{
+    display:block;
+    height:1px;
+    background-color:white;
+    width:45%;
+    margin-bottom:16px;
+}
+.subtitle{
+    color:#D4D4D4;
+    font-weight:400;
+    font-size:28px;
+    margin-bottom:16px;
+}
+#restanteHTML{
+    color:white;
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:24px;
+}
+.content__text{
+    color:#E1E1E1;
+    margin-bottom:24px;
+    max-width:500px;
+}
+button{
+    color:white;
+    text-transform:uppercase;
+    font-weight:700;
+    padding:16px 96px;
+    background-color:#9A16B0;
+    font-size:24px;
+    border:none;
+    transition: all .5s;
+}
+button:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+    filter:brightness(110%);
+    border-radius:24px;
+    transition: all .5s;
+}
+.pix__section{
+    background-image:linear-gradient(to right, #9A16B0, #999);
+    padding:3vw;
+}
+.pix__section .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.text{
+    max-width:400px;
+    margin-right:56px;
+}
+.text h2{
+    margin-bottom:24px;
+    font-size:36px;
+    font-weight:500;
+}
+.text p{
+    font-size:18px;
+    font-weight:400;
+    color:#dfdede
+}
+@media (max-width:768px){
+    main{
+        background-size:cover;
+        background-position-x:-500px;
+    }
+    main .container{
+        padding-top:200px;
+    }
+    .pix__section{
+        padding:3vw 10vw;
+    }
+    .pix__section img{
+        height:150px;
+    }
+    .line{
+        width:90%;
+    }
+}
+@media (max-width:500px){
+    .pix__section{
+        padding:6vw 10vw;
+    }
+}
+@media (max-width:612px){
+    main .container{
+        width:90vw;
+        max-width:90vw;
+    }
+    .main__title h1{
+        font-size:40px;
+    }
+}
