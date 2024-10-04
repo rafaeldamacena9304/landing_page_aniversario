@@ -101,7 +101,6 @@ button:hover{
 @media (max-width:768px){
     main{
         background-size:cover;
-        background-position-x:-500px;
     }
     main .container{
         padding-top:200px;
